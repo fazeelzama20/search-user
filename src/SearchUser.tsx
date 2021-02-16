@@ -9,7 +9,9 @@ export const SearchUser: React.FunctionComponent = () => {
         { id: 5, name: 'delhi', age: 60 }
     ];
 
-    // we need to provide the type of html element which we are going to refer
+    /* we need to provide the type of html element which we are going to refer.
+    passing null in paranthesis means, null as default value for inputRef */
+
     const inputRef = useRef<HTMLInputElement | null>(null);
     const [name, setName] = useState('');
     const [user, setUser] = useState<{ id: number, name: string, age: number | undefined }>();
