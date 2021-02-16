@@ -13,7 +13,7 @@ export const SearchUser: React.FunctionComponent = () => {
     const [user, setUser] = useState<{ id: number, name: string, age: number | undefined }>();
     const [isFound, setFound] = useState('');
 
-    const handleInput = (event: any) => {
+    const handleInput = (event: React.ChangeEvent<HTMLInputElement>) => {
         setName(event?.target.value);
     }
 
